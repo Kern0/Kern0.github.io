@@ -19,6 +19,8 @@
 
 			.container {
 				margin: 2rem 4rem;
+				display: none;
+				min-width: 450px;
 			}
 			
 			.block {
@@ -38,6 +40,16 @@
 			.yourtruth {
 				font-size: 2.5rem;
 				margin-top: 1rem;
+			}
+			
+			#vpcount, #yourcount {
+				display: none;
+			}
+			
+			.hiddentruth {
+				min-width: 1rem;
+				display: inline-block;
+				min-width: 1.5rem;
 			}
 			
 			.header {
@@ -74,12 +86,12 @@
 	<body>
 		<div class="container">
 			<section class="block">
-				<div class="vptruth">Конфлюренс говно уже <span id="vpcount"><span style="color:#ddd">:—(</span></span> раз<span class="asterisk">*</span> по версии <a href="https://twitter.com/valerypopoff">@valerypopoff</a></div>
-				<div class="yourtruth">А чем хуже ты? Вступай в наш клуб — нас<span class="asterisk">*</span> уже <span id="yourcount"><span style="color:#ddd">:—(</span></span>!</div>
+				<div class="vptruth">Конфлюренс говно уже <span class="hiddentruth"><span id="vpcount"></span></span> раз по версии <a href="https://twitter.com/valerypopoff">@valerypopoff</a></div>
+				<div class="yourtruth">А чем хуже ты? Вступай в наш клуб — нас уже <span class="hiddentruth"><span id="yourcount"></span></span>!</div>
 				<div class="likely likely-big" id="hatebutton" data-title="Какое же говно этот Confluence!" data-url="http://kern0.ru/confluence" >
 					<div class="twitter" id="tweetbutton">Confluence меня снова добил.jpg</div>
 				</div>
-				<div class="roughly"><span class="asterisk">*</span> &mdash; Приблизительно. API Твиттера не позволяет получать точные ответы по поисковому запросу, только "релевантные".</div>
+				<div class="roughly"><span class="asterisk">*</span> &mdash; Приблизительно. Похоже API Твиттера не позволяет получать точные ответы по поисковому запросу, только "релевантные".</div>
 			</section>
 			<img class="scissors" src="scissors.png">
 		</div>
@@ -87,23 +99,27 @@
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
+			$('.container').fadeIn(700);
+			
 			$.ajax({
 				type: "GET",
 				url: 'http://cfnc.kern0.ru/confluence',
 				data: {},
 				success: function (data) {
-					var sadface = '<span style="color:#ddd">:—(</span>';
+					var sadface = '<span style="color:#ddd">:—(</span>',
+						asterisk = '<span class="asterisk">*</span>';
+					
 					if (data.count.valerypopoff) {
-						$('#vpcount').html(data.count.valerypopoff);
+						$('#vpcount').html(data.count.valerypopoff + asterisk).fadeIn('fast');
 					} else {
-						$('#vpcount').html(sadface);
+						$('#vpcount').html(sadface).fadeIn('fast');
 					}
 					
 					
 					if (data.count.people) {
-						$('#yourcount').html(data.count.people);
+						$('#yourcount').html(data.count.people + asterisk).fadeIn('fast');
 					} else {
-						$('#yourcount').html(sadface);
+						$('#yourcount').html(sadface).fadeIn('fast');
 					}
 				}
 			});
