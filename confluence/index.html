@@ -80,6 +80,18 @@
 			    right: 80px;
 			    float: right;
 			}
+			
+			.tos 
+			{
+				filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=2);  /* IE6,IE7 */
+				ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; /* IE8 */
+				-moz-transform: rotate(-180deg);  /* FF3.5+ */
+				-o-transform: rotate(-180deg);  /* Opera 10.5 */
+				-webkit-transform: rotate(-180deg);  /* Safari 3.1+, Chrome */
+				margin-top: 1rem;
+				color: #999;
+				font-size: 0.6rem;
+			}
 		</style>
 		<link rel="stylesheet" href="likely.css"></link>
 	</head>
@@ -94,6 +106,7 @@
 				<div class="roughly"><span class="asterisk">*</span> &mdash; Приблизительно. Похоже API Твиттера не позволяет получать точные ответы по поисковому запросу, только "релевантные".</div>
 			</section>
 			<img class="scissors" src="scissors.png">
+			<div class="tos">На правах шутки</div>
 		</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
