@@ -92,17 +92,18 @@
 				url: 'http://cfnc.kern0.ru/confluence',
 				data: {},
 				success: function (data) {
+					var sadface = '<span style="color:#ddd">:—(</span>';
 					if (data.count.valerypopoff) {
 						$('#vpcount').html(data.count.valerypopoff);
 					} else {
-						$('#vpcount').html('-1');
+						$('#vpcount').html(sadface);
 					}
 					
 					
 					if (data.count.people) {
 						$('#yourcount').html(data.count.people);
 					} else {
-						$('#yourcount').html('-1');
+						$('#yourcount').html(sadface);
 					}
 				}
 			});
@@ -114,7 +115,7 @@
 					'Как же я обожаю этот синтаксис!',
 					'Стабильность, удобство, Confluence',
 					'Сперва добейся',
-					'Скоро надпись сотрётся',
+					'Скоро кнопка продавится',
 					'Кнопка любви'
 				],
 				randomNumber = (Math.random() * randomButtonStrings.length) | 0;
