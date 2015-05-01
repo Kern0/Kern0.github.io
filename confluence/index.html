@@ -59,6 +59,15 @@
 			.roughly .asterisk {
 				font-size: 1.3rem;
 			}
+			
+			.scissors {
+				height: 30px;
+				width: 42px;
+				position: relative;
+			    bottom: 16px;
+			    right: 80px;
+			    float: right;
+			}
 		</style>
 		<link rel="stylesheet" href="likely.css"></link>
 	</head>
@@ -72,6 +81,7 @@
 				</div>
 				<div class="roughly"><span class="asterisk">*</span> &mdash; Приблизительно. API Твиттера не позволяет получать точные ответы по поисковому запросу, только "релевантные".</div>
 			</section>
+			<img class="scissors" src="scissors.png">
 		</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -104,7 +114,8 @@
 					'Как же я обожаю этот синтаксис!',
 					'Стабильность, удобство, Confluence',
 					'Сперва добейся',
-					'Скоро надпись сотрётся'
+					'Скоро надпись сотрётся',
+					'Кнопка любви'
 				],
 				randomNumber = (Math.random() * randomButtonStrings.length) | 0;
 			
