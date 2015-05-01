@@ -1,0 +1,114 @@
+<html lang="en">
+	<head>
+		<title>Confluence</title>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="description" content="Confluence" />
+		<meta name="author" content="Kern0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		
+		<style>
+			body {
+				font-family: "Lato","Helvetica Neue",sans-serif;
+				margin: 0px;
+			}
+			
+			a {
+				color: #559A8B;
+			}
+
+			.container {
+				margin: 2rem 4rem;
+			}
+			
+			.block {
+				border: 3px dashed #999;
+				padding: 2rem;
+			}
+			
+			.asterisk {
+				color: #999;
+				font-size: 2rem;
+			}
+			
+			.vptruth {
+				font-size: 2.5rem;
+			}
+			
+			.yourtruth {
+				font-size: 2.5rem;
+				margin-top: 1rem;
+			}
+			
+			.header {
+				font-size: 2.3rem;
+				margin-top: 2rem;
+				margin-bottom: 1rem;
+			}
+			
+			#hatebutton {
+				margin-top: 2rem;
+			}
+			
+			.roughly {
+				margin: 3rem 0rem 0rem;
+				font-size: 1rem;
+				color: #999;
+			}
+			
+			.roughly .asterisk {
+				font-size: 1.3rem;
+			}
+		</style>
+		<link rel="stylesheet" href="likely.css"></link>
+	</head>
+	<body>
+		<div class="container">
+			<section class="block">
+				<div class="vptruth">Конфлюренс говно уже <span id="vpcount"><span style="color:#ddd">:—(</span></span> раз<span class="asterisk">*</span> по версии <a href="https://twitter.com/valerypopoff">@valerypopoff</a></div>
+				<div class="yourtruth">А чем хуже ты? Признай правду вместе с нами — нас<span class="asterisk">*</span> уже <span id="yourcount"><span style="color:#ddd">:—(</span></span>!</div>
+				<div class="likely likely-big" id="hatebutton" data-title="Как же я солидарен с @valerypopoff и @kern_0! Какое же говно этот Confluence!" data-url="http://kern0.ru/confluence" >
+					<div class="twitter" id="tweetbutton">Confluence меня снова добил.jpg</div>
+				</div>
+				<div class="roughly"><span class="asterisk">*</span> &mdash; Приблизительно. API Твиттера не позволяет получать точные ответы по поисковому запросу, только "релевантные".</div>
+			</section>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$.ajax({
+				type: "GET",
+				url: 'http://cfnc.kern0.ru/confluence',
+				data: {},
+				success: function (data) {
+					if (data.count.valerypopoff) {
+						$('#vpcount').html(data.count.valerypopoff);
+					} else {
+						$('#vpcount').html('-1');
+					}
+					
+					
+					if (data.count.people) {
+						$('#yourcount').html(data.count.people);
+					} else {
+						$('#yourcount').html('-1');
+					}
+				}
+			});
+			
+			var randomButtonStrings = [
+					'Confluence меня снова добил.jpg',
+					'Какое же говно этот ваш Confluence снова',
+					'Прошло 0 дней с того момента, как кто-то нажимал на эту кнопку',
+					'Отличная вёрстка, Confluence',
+					'Как же я обожаю этот синтаксис!',
+					'Стабильность, удобство, Confluence',
+				],
+				randomNumber = (Math.random() * randomButtonStrings.length) | 0;
+			
+			$('#tweetbutton').html(randomButtonStrings[randomNumber]);
+		});
+	</script>
+	<script src="likely.js"></script>
+</html>
