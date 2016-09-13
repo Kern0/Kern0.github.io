@@ -1,0 +1,179 @@
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  animation: appear 1s ease;
+  width: 810px;
+  margin-top: 25vh;
+  padding-left: 200px;
+  margin-right: 240px;
+  padding-bottom: 100px;
+}
+
+*[title] {
+  cursor: help;
+}
+
+.hero__hidden {
+  color: #FF6961;
+}
+
+
+.header {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 62px;
+  margin-bottom: 0.083333333em;
+}
+
+.sub-header {
+  margin-bottom: 0.083333333em;
+
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 0.4em;
+}
+
+.social-wrap {
+  margin-top: 40px;
+}
+
+.social-wrap__header {
+  margin-bottom: 5px;
+}
+
+.email {
+  font-size: 28px;
+  line-height: 34px;
+  display: block;
+}
+
+.social {
+  height: 22px;
+  margin-right: 10px;
+  margin-top: 9px;
+}
+
+.social__item {
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 9px;
+  display: inline-block;
+  margin: 0;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+
+.can {
+  margin-top: 150px;
+}
+
+.can__sub-header {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+.can__item {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0.4em;
+  position: relative;
+  margin-left: 30px;
+
+  &::before {
+    content: '- ';
+    display: inline-block;
+    position: absolute;
+    margin-left: -20px;
+  }
+}
+
+
+.edu {
+  margin-top: 150px;
+}
+
+.edu__desc {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0.4em;
+}
+
+.about {
+  margin-top: 150px;
+}
+
+.about__header {
+  margin-bottom: 15px;
+}
+
+.project {
+  margin-bottom: 15px;
+
+  &--margin {
+    margin-bottom: 50px;
+  }
+}
+
+.project__header {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.project__desc {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0.4em;
+}
+
+.positions {
+  margin-top: 150px;
+}
+
+.positions__item {
+  margin-bottom: 30px;
+}
+
+.positions__header {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.positions__desc {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0.4em;
+}
+
+.copyright {
+  margin-top: 100px;
+  font-size: 18px;
+  line-height: 22px;
+}

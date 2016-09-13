@@ -1,0 +1,12 @@
+/* Ссылки
+TODO: убить блок и заменить на настоящие ссылки */
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+  transition: 0.5s ease;
+
+  &:hover {
+    color: red;
+    transition: 0s ease;
+  }
+}
