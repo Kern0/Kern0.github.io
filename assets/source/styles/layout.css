@@ -11,8 +11,8 @@ html, body {
   color: #FFF;
   font-size: 18px;
   font-weight: 400;
-  min-height: 500px;
   background: #FF6961;
+  min-width: 360px;
 }
 
 body {
