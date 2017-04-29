@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/notarseniy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://notarseniy.ru
+  * I am notarseniy (https://keybase.io/notarseniy) on keybase.
+  * I have a public key ASBGQec-W-uncehNRs0IjZFWG54MVO1hoyQ8IMRaJN3tBAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01204641e73e5beba771e84d46cd088d91561b9e0c54ed61a3243c20c45a24dded040a",
+            "host": "keybase.io",
+            "kid": "01204641e73e5beba771e84d46cd088d91561b9e0c54ed61a3243c20c45a24dded040a",
+            "uid": "f9bb9ac2c4d3615fbd68408f721fa119",
+            "username": "notarseniy"
+        },
+        "service": {
+            "hostname": "notarseniy.ru",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1487341397,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1487341334,
+        "hash": "e5b7f5019923f83a4982a6794c4776d6a627e6fa789a59b8e567acb1a21c80f79bdf757e28d6c766d376b7c898bdfcd433ffae28982d240d2f20165d936f1df8",
+        "seqno": 900214
+    },
+    "prev": "f677b0a2293ed4ec875186626ecc7a9c2bfe4844bba52ab61ecc659ac0ce2409",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRkHnPlvrp3HoTUbNCI2RVhueDFTtYaMkPCDEWiTd7QQKp3BheWxvYWTFAvZ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNDY0MWU3M2U1YmViYTc3MWU4NGQ0NmNkMDg4ZDkxNTYxYjllMGM1NGVkNjFhMzI0M2MyMGM0NWEyNGRkZWQwNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDY0MWU3M2U1YmViYTc3MWU4NGQ0NmNkMDg4ZDkxNTYxYjllMGM1NGVkNjFhMzI0M2MyMGM0NWEyNGRkZWQwNDBhIiwidWlkIjoiZjliYjlhYzJjNGQzNjE1ZmJkNjg0MDhmNzIxZmExMTkiLCJ1c2VybmFtZSI6Im5vdGFyc2VuaXkifSwic2VydmljZSI6eyJob3N0bmFtZSI6Im5vdGFyc2VuaXkucnUiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE4In0sImN0aW1lIjoxNDg3MzQxMzk3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0ODczNDEzMzQsImhhc2giOiJlNWI3ZjUwMTk5MjNmODNhNDk4MmE2Nzk0YzQ3NzZkNmE2MjdlNmZhNzg5YTU5YjhlNTY3YWNiMWEyMWM4MGY3OWJkZjc1N2UyOGQ2Yzc2NmQzNzZiN2M4OThiZGZjZDQzM2ZmYWUyODk4MmQyNDBkMmYyMDE2NWQ5MzZmMWRmOCIsInNlcW5vIjo5MDAyMTR9LCJwcmV2IjoiZjY3N2IwYTIyOTNlZDRlYzg3NTE4NjYyNmVjYzdhOWMyYmZlNDg0NGJiYTUyYWI2MWVjYzY1OWFjMGNlMjQwOSIsInNlcW5vIjo4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQL4NiKRVn6VLxNMOIF/p+ExcqGBtGcKeX14t+DVOPMOIZfZi34i2GDYMC2gsWjbk2sQ6FhtBEkFg/DA/fk2dwA+oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDrxXE7uaeFuU5R9jCEncMT++JM05d9C/Cszlxrk2XV0aN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/notarseniy
+
+==================================================================

@@ -1,5 +1,5 @@
 .container {
-  height: 100%;
+  height: auto;
   width: 100%;
   position: relative;
 }
@@ -89,11 +89,11 @@ p {
   }
 }
 
-.social-wrap {
+.scl-wrap {
   margin-top: 40px;
 }
 
-.social-wrap__header {
+.scl-wrap__header {
   margin-bottom: 5px;
 }
 
@@ -111,13 +111,13 @@ p {
 }
 
 
-.social {
+.scl {
   height: 22px;
   margin-right: 10px;
   margin-top: 9px;
 }
 
-.social__item {
+.scl__item {
   font-size: 18px;
   line-height: 22px;
   padding-right: 9px;
@@ -130,7 +130,7 @@ p {
 }
 
 @media (max-width: 700px) {
-  .social__item {
+  .scl__item {
     font-size: 14px;
     line-height: 16px;
   }
