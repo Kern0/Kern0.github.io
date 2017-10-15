@@ -55,6 +55,16 @@
   color: #FF6961;
 }
 
+.above-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .above-header {
+    font-size: 16px;
+  }
+}
 
 .header {
   font-size: 52px;
